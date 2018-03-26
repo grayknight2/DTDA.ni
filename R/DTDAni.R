@@ -87,7 +87,7 @@
 #'
 #' @export
 DTDAni <- function(x, u, tau) {
-
+  cat("Call:", "\n")
   print(match.call())
 
   if (any(is.numeric(c(x, u, tau)))){
