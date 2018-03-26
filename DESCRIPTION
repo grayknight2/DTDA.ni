@@ -1,0 +1,17 @@
+Package: DTDA.ni
+Title: Doubly truncated data analysis, non iterative
+Version: 0.0.0.9000
+Authors@R: c(
+  person("de Uña Álvarez", "Jacobo", email = "jacobo@uvigo.es", role = "aut"),
+  person("Soage González", "José Carlos", email = "jsoage@uvigo.es", role = "cre"))
+Maintainer: José Carlos Soage González <jsoage@uvigo.es>
+Description: This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable).
+Depends: R (>= 3.3.1)
+License: GPL-2 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Method: S3method("plot.DTDAni") 
