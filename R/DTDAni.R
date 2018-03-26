@@ -114,7 +114,6 @@ DTDAni <- function(x, u, tau) {
     stop("Argument 'tau' is missing")
   }
 
-  # if (x - diff(x) <= tau)
   v <- u + tau
 
   if (any(u > x)){
@@ -127,6 +126,10 @@ DTDAni <- function(x, u, tau) {
   u <- u[order(x)]
   v <- v[order(x)]
   x <- x[order(x)]
+
+  if (any(diff(x) > tau)){
+    warning("Condition 'x(i)-x(i-1) >= tau' not matched")
+  }
 
   vv <- unique(x)
 
