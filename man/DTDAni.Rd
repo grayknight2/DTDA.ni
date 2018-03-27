@@ -22,8 +22,8 @@ A list containing:
 \item{L}{The auxiliary Li used in the calculation of the estimator.}
 }
 \description{
-This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
-The package is restricted to interval sampling.
+This function computes a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
+The function is restricted to interval sampling.
 }
 \details{
 The function DTDAni is adapted to the presence of ties.
@@ -55,14 +55,14 @@ u <- u0[u0 <= x0 & x0 <= v0]
 v <- v0[u0 <= x0 & x0 <= v0]
 n <- length(x)  # Final sample size after the interval sampling
 
-# Create an object wit DTDAni function
+# Create an object with DTDAni function
 res <- DTDAni(x, u, tau)
 plot(res)
 
 abline(a = 0, b = 1, col = "green")  #the true cumulative distribution
 
 # Calculating the reverse estimator:
-res2 <- DTDAni(-x, -u - 0.75, 0.75)
+res2 <- DTDAni(-x, -u - tau, tau)
 lines(-res2$x, 1 - res2$cumprob, type = "s", col = "blue", lty = 2)
 
 # Weigthed estimator (recommended):
