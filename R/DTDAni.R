@@ -166,17 +166,14 @@ DTDAni <- function(x, u, tau) {
 
   FF <- rep(1, n.vv)
   P <- rep(0, n.vv)
-  idd <- rep(0, n.vv)
   indicator <- rep(0, n.vv)
 
   for (i in 2:n.vv) {
 
     vvv <- vv
-    vvv[vv >= vv[i] - tau] = min(vv) - 1
+    vvv[vv >= vv[i] - tau] = min(vv) - tau - 1
 
     index <- which.max(vvv)
-    idd[i] <- index
-
     indicator[i] <- as.numeric(length(vv[vv < vv[i] - tau]) > 0)
 
     P[i] <- indicator[i] * FF[index]
