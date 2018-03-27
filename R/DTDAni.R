@@ -1,8 +1,8 @@
 #' @title Doubly truncated data analysis, non iterative
 #'
 #' @description
-#' This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
-#' The package is restricted to interval sampling.
+#' This function computes a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
+#' The function is restricted to interval sampling.
 #'
 #' @param x Numeric vector corresponding the variable of ultimate interest.
 #' @param u Numeric vector corresponding to the left truncation variable.
@@ -54,14 +54,14 @@
 #' v <- v0[u0 <= x0 & x0 <= v0]
 #' n <- length(x)  # Final sample size after the interval sampling
 #'
-#' # Create an object wit DTDAni function
+#' # Create an object with DTDAni function
 #' res <- DTDAni(x, u, tau)
 #' plot(res)
 #'
 #' abline(a = 0, b = 1, col = "green")  #the true cumulative distribution
 #'
 #' # Calculating the reverse estimator:
-#' res2 <- DTDAni(-x, -u - 0.75, 0.75)
+#' res2 <- DTDAni(-x, -u - tau, tau)
 #' lines(-res2$x, 1 - res2$cumprob, type = "s", col = "blue", lty = 2)
 #'
 #' # Weigthed estimator (recommended):
@@ -127,8 +127,8 @@ DTDAni <- function(x, u, tau) {
   v <- v[order(x)]
   x <- x[order(x)]
 
-  if (any(diff(x) > tau)){
-    warning("Condition 'x(i)-x(i-1) >= tau' not matched")
+  if (any(diff(x) > tau)) {
+    warning("Condition 'x(i)-x(i-1) <= tau' not matched")
   }
 
   vv <- unique(x)
@@ -187,7 +187,7 @@ DTDAni <- function(x, u, tau) {
   FFnorm <- FF / max(FF)
   cfvvi <- cumsum(fvvi)
   k <- length(vv)
-  r <- list(x = vv,  nx = fvvi, cumprob = FFnorm, P = P[-1], L = FLB[-1])
+  r <- list(x = vv,  nx = fvvi, cumprob = FFnorm, P = P[-1], L = FLB[-length(FLB)])
   class(r) <- c('list', 'DTDAni')
   r
 }
