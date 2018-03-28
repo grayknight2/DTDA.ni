@@ -7,7 +7,7 @@ de Uña-Álvarez J. (2018) A Non-iterative Estimator for Interval Sampling and D
 
 ## Details
 + Package: DTDA.ni
-+ Version: 0.0.0.9000
++ Version: 1.0
 + Maintainer: José Carlos Soage González jsoage@uvigo.es
 + License: GPL-2
 
