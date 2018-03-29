@@ -2,8 +2,9 @@
 This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable. The package is restricted to interval sampling.
 
 ## Install the development version from GitHub
-
+```r
 devtools::install_github('sidoruvigo/DTDA.ni')
+```
 
 ## Description
 This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see [de Uña-Álvarez (2018)](https://link.springer.com/chapter/10.1007%2F978-3-319-73848-2_37). The package is restricted to interval sampling. 
