@@ -1,5 +1,5 @@
 # DTDA.ni
-This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable. The package is restricted to interval sampling.
+[SiDOR Group](https://doi.org/10.1007/978-3-319-73848-2_37). [University of Vigo.](http://uvigo.gal/)
 
 ## Install the development version from GitHub
 ```r
