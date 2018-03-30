@@ -1,5 +1,5 @@
 # DTDA.ni
-[SiDOR Group](https://doi.org/10.1007/978-3-319-73848-2_37). [University of Vigo.](http://uvigo.gal/)
+[SiDOR Group](http://sidor.uvigo.es/en/). [University of Vigo.](http://uvigo.gal/)
 
 ## Install the development version from GitHub
 ```r
