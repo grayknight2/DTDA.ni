@@ -12,16 +12,16 @@
 }
 }
 \description{
-This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
-The package is restricted to interval sampling.
+Non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
+Restricted to interval sampling.
 }
 \details{
-Documentation for package ‘DTDA.ni’ version 0.0.0.9000
+Documentation for package ‘DTDA.ni’ version 1.0
 
 
 \itemize{
 \item{Package: DTDA.ni}
-\item{Version: 0.0.0.9000}
+\item{Version: 1.0}
 \item{Maintainer: José Carlos Soage González \email{jsoage@uvigo.es}}
 \item{License: GPL-2}
 }
@@ -39,6 +39,13 @@ de Uña-Álvarez J. (2018) A Non-iterative Estimator for Interval Sampling and
 Doubly Truncated Data. In: Gil E., Gil E., Gil J., Gil M. (eds)
 The Mathematics of the Uncertain. Studies in Systems, Decision and Control,
 vol 142. Springer, Cham, pp. 387-400.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/sidoruvigo/DTDA.ni}
+}
+
 }
 \author{
 \itemize{

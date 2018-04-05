@@ -4,12 +4,14 @@
 \alias{plot.DTDAni}
 \title{plot.DTDAni}
 \usage{
-\method{plot}{DTDAni}(d, ecdf = FALSE)
+\method{plot}{DTDAni}(x, ecdf = FALSE, ...)
 }
 \arguments{
-\item{d}{DTDAni object}
+\item{x}{DTDAni object.}
 
 \item{ecdf}{Whether to display the ordinary empirical cumulative distribution function or not. Default = FALSE.}
+
+\item{...}{Aditional parameters.}
 }
 \description{
 S3 method to plot a DTDAni object by using the generic plot function.

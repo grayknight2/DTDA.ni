@@ -2,7 +2,7 @@
 % Please edit documentation in R/DTDAni.R
 \name{DTDAni}
 \alias{DTDAni}
-\title{Doubly truncated data analysis, non iterative}
+\title{Doubly Truncated Data Analysis, Non Iterative}
 \usage{
 DTDAni(x, u, tau)
 }
