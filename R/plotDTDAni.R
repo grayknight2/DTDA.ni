@@ -1,8 +1,10 @@
 #' S3 method to plot a DTDAni object by using the generic plot function.
 #'
 #' @title plot.DTDAni
-#' @param d DTDAni object
+#' @param x DTDAni object.
 #' @param ecdf Whether to display the ordinary empirical cumulative distribution function or not. Default = FALSE.
+#' @param ... Aditional parameters.
+#'
 #' @examples
 #'
 #' \dontrun{
@@ -41,14 +43,14 @@
 #'
 #'
 #' @export
-plot.DTDAni <-  function(d, ecdf = FALSE) {
-  graphics::plot(d$x, d$cumprob, type = "s", col = "blue", xlab = "",  ylab = "")
+plot.DTDAni <-  function(x, ecdf = FALSE, ...) {
+  graphics::plot(x$x, x$cumprob, type = "s", col = "blue", xlab = "",  ylab = "")
   graphics::abline(a = 0, b = 0, col = "lightgray", lty = 2)
   graphics::abline(a = 1, b = 0, col = "lightgray", lty = 2)
 
   if (ecdf == TRUE){
-    E <- cumsum(d$nx)/length(x)
-    graphics::lines(d$x, E, type="s",
+    E <- cumsum(x$nx)/length(x)
+    graphics::lines(x$x, E, type="s",
                     col="lightgray", lwd = 2)
     graphics::legend("bottomright", c("Corrected", "Non-corrected"),
                      lty = c(1, 1), lwd = c(2.5, 2.5), col = c("blue", "lightgray"))

@@ -1,4 +1,4 @@
-#' @title Doubly truncated data analysis, non iterative
+#' @title Doubly Truncated Data Analysis, Non Iterative
 #'
 #' @description
 #' This function computes a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
@@ -174,6 +174,7 @@ DTDAni <- function(x, u, tau) {
     vvv[vv >= vv[i] - tau] = min(vv) - tau - 1
 
     index <- which.max(vvv)
+
     indicator[i] <- as.numeric(length(vv[vv < vv[i] - tau]) > 0)
 
     P[i] <- indicator[i] * FF[index]
@@ -191,4 +192,4 @@ DTDAni <- function(x, u, tau) {
 
 
 
-
+# https://win-builder.r-project.org/incoming_pretest/180327_133338_DTDA.ni_0009000/00check.log

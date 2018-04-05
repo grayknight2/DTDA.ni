@@ -1,16 +1,16 @@
 #' Package ‘DTDA.ni’
 #'
-#' Documentation for package ‘DTDA.ni’ version 0.0.0.9000
+#' Documentation for package ‘DTDA.ni’ version 1.0
 #'
 #' @description
-#' This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
-#' The package is restricted to interval sampling.
+#' Non-iterative estimator for the cumulative distribution of a doubly truncated variable, see de Uña-Álvarez (2018).
+#' Restricted to interval sampling.
 #'
 #'
 #' @details
 #' \itemize{
 #' \item{Package: DTDA.ni}
-#' \item{Version: 0.0.0.9000}
+#' \item{Version: 1.0}
 #' \item{Maintainer: José Carlos Soage González \email{jsoage@@uvigo.es}}
 #' \item{License: GPL-2}
 #' }
