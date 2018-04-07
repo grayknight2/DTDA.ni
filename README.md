@@ -10,7 +10,9 @@ devtools::install_github('sidoruvigo/DTDA.ni')
 ```r
 install.packages('DTDA.ni')
 ```
-
+[![Downloads](http://cranlogs.r-pkg.org/badges/DTDA.ni)](https://cran.r-project.org/package=DTDA.ni)
+ [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/DTDA.ni)](https://cran.r-project.org/package=DTDA.ni)
+ 
 ## Description
 This package implements a non-iterative estimator for the cumulative distribution of a doubly truncated variable, see [de Uña-Álvarez (2018)](https://link.springer.com/chapter/10.1007%2F978-3-319-73848-2_37). The package is restricted to interval sampling. 
 de Uña-Álvarez J. (2018) A Non-iterative Estimator for Interval Sampling and Doubly Truncated Data. In: Gil E., Gil E., Gil J., Gil M. (eds) The Mathematics of the Uncertain. Studies in Systems, Decision and Control, vol 142. Springer, Cham, pp. 387-400.
