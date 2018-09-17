@@ -192,4 +192,4 @@ DTDAni <- function(x, u, tau) {
 
 
 
-# https://win-builder.r-project.org/incoming_pretest/180327_133338_DTDA.ni_0009000/00check.log
+
